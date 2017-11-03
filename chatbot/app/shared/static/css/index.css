@@ -5,4 +5,40 @@ div.nome-chat {
 span.icone-chat {
 	margin-right: 10px;
 	color: #aaa;
+	background: #ddd;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+}
+
+span.icone-chat i.material-icons {
+	margin-top: 7px;
+}
+
+div.div-mensagem {
+	margin: 0px;
+}
+
+div.mensagens-chat {
+	height: 65vh;
+}
+
+input#mensagem {
+	height: 2rem;
+}
+
+div.div-btn-mensagem {
+	margin-top: 10px;
+}
+
+div.div-btn-mensagem button {
+	text-align: center;
+    background: none;
+    border: none;
+}
+
+div.div-btn-mensagem button i.material-icons {
+	font-size: 3vw;
 }
