@@ -23,6 +23,7 @@ div.div-mensagem {
 
 div.mensagens-chat {
 	height: 77vh;
+	overflow: auto;
 }
 
 input#mensagem {
@@ -47,4 +48,9 @@ div.div-btn-mensagem button:disabled {
 
 div.div-btn-mensagem button i.material-icons {
 	font-size: 3rem;
+}
+
+div.mensagem-chat {
+	margin: 10px !important;
+	padding: 10px !important;
 }
