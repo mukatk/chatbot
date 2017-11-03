@@ -13,6 +13,15 @@ var form = new Vue({
             };
 
             _self.mensagens.push(objMensagem);
+
+            _self.$http.get('/chat', { texto: _self.mensagem }).then(response => {
+                var objResposta = {
+                    texto: response.body,
+                    remetente: false
+                }
+                _self.mensagens.push(objResposta);
+            });
+
             _self.mensagem = '';
         }
     }
