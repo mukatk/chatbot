@@ -22,7 +22,7 @@ div.div-mensagem {
 }
 
 div.mensagens-chat {
-	height: 65vh;
+	height: 77vh;
 }
 
 input#mensagem {
@@ -31,14 +31,20 @@ input#mensagem {
 
 div.div-btn-mensagem {
 	margin-top: 10px;
+	padding: 0px;
 }
 
 div.div-btn-mensagem button {
 	text-align: center;
     background: none;
-    border: none;
+	border: none;
+	color: #26a69a;
+}
+
+div.div-btn-mensagem button:disabled {
+	color: #aaa;
 }
 
 div.div-btn-mensagem button i.material-icons {
-	font-size: 3vw;
+	font-size: 3rem;
 }
