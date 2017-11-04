@@ -1,4 +1,12 @@
 from flask import Blueprint, render_template, request, jsonify
+from chatterbot import ChatBot
+
+from chatterbot.trainers import ChatterBotCorpusTrainer
+
+chatterbot = ChatBot("Robo Samuel")
+chatterbot.set_trainer(ChatterBotCorpusTrainer)
+
+chatterbot.train('chatterbot.corpus.english')
 
 chat_page = Blueprint(
 	'chat_page', 
@@ -10,5 +18,5 @@ chat_page = Blueprint(
 
 @chat_page.route('/chat', methods=['GET', 'POST'])
 def busca_resposta():
-    a = request.get_json()
-    return jsonify(a['texto'])
+	a = chatterbot.get_response(request.get_json()["texto"])
+	return jsonify(str(a))
