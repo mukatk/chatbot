@@ -10,5 +10,5 @@ chat_page = Blueprint(
 
 @chat_page.route('/chat', methods=['GET', 'POST'])
 def busca_resposta():
-    a = request.args.get('texto', default=None, type=None)
-    return jsonify(a)
+    a = request.get_json()
+    return jsonify(a['texto'])
