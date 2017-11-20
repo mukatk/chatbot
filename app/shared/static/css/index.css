@@ -1,0 +1,56 @@
+div.nome-chat {
+	height: 60px;
+}
+
+span.icone-chat {
+	margin-right: 10px;
+	color: #aaa;
+	background: #ddd;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+}
+
+span.icone-chat i.material-icons {
+	margin-top: 7px;
+}
+
+div.div-mensagem {
+	margin: 0px;
+}
+
+div.mensagens-chat {
+	height: 77vh;
+	overflow: auto;
+}
+
+input#mensagem {
+	height: 2rem;
+}
+
+div.div-btn-mensagem {
+	margin-top: 10px;
+	padding: 0px;
+}
+
+div.div-btn-mensagem button {
+	text-align: center;
+    background: none;
+	border: none;
+	color: #26a69a;
+}
+
+div.div-btn-mensagem button:disabled {
+	color: #aaa;
+}
+
+div.div-btn-mensagem button i.material-icons {
+	font-size: 3rem;
+}
+
+div.mensagem-chat {
+	margin: 10px !important;
+	padding: 10px !important;
+}
