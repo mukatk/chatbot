@@ -2,5 +2,4 @@
 Chatbot using ChatterBot
 
 # Instalação
-* pip install flask
-* pip install chatterbot
+* pip install -r requirements.txt
