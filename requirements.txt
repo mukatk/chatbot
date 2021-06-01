@@ -21,5 +21,5 @@ requests-oauthlib==0.8.0
 ruamel.yaml==0.15.0
 six==1.11.0
 SQLAlchemy==1.1.15
-urllib3==1.22
+urllib3==1.26.5
 Werkzeug==0.12.2
